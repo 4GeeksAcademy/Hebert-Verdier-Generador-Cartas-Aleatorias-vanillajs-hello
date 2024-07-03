@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 let button = document.querySelector("#buttonGenerar");
 button.addEventListener("click", generatedNewCard);
 
-setInterval(generatedNewCard, 1000);
+setInterval(generatedNewCard, 5000);
 
 window.onload = function() {
   //write your code here
