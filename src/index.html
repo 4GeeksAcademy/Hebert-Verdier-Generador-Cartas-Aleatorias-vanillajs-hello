@@ -14,33 +14,53 @@
   </head>
   <body class="bg-success">
     <div class="d-flex justify-content-center align-items-center">
-      <div class="card mt-2" style="width: 18rem; border-radius: 10px;">
-        <div
-          id="topPalo"
-          class="text-start ps-2"
-          style="font-size: 5rem"
-          ;
-        ></div>
-        <div
-          id="value"
-          class="d-flex justify-content-center align-items-center"
-          style="height: 250px; font-size: 8rem"
-          ;
-        ></div>
-        <div
-          id="bottomPalo"
-          class="text-end pe-2"
-          style="font-size: 5rem"
-          ;
-        ></div>
-      </div>
-      <div>
-        <button id="buttonGenerar" type="button" class="btn btn-primary">
-          Generar
-        </button>
+      <div class="row mt-2">
+        <div class="col">
+          <div class="d-flex justify-content-center align-items-center">
+            <button id="buttonGenerar" type="button" class="btn btn-primary">
+              Generar
+            </button>
+          </div>
+          <div class="d-flex flex-column justify-content-center pt-2">
+            <input id="height" type="number" placeholder="height" />
+            <input id="width" type="number" placeholder="width" />
+            <button
+              id="buttonDimensiones"
+              type="button"
+              class="btn btn-danger mt-2"
+            >
+              Cambiar dimensiones
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            id="card"
+            class="card"
+            style="width: 18rem; border-radius: 10px;"
+          >
+            <div
+              id="topPalo"
+              class="text-start ps-2 mt-0"
+              style="font-size: 5rem"
+              ;
+            ></div>
+            <div
+              id="value"
+              class="d-flex justify-content-center align-items-center my-auto"
+              style="height: 250px; font-size: 8rem"
+              ;
+            ></div>
+            <div
+              id="bottomPalo"
+              class="text-end pe-2 mt-auto border-0"
+              style="font-size: 5rem"
+              ;
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
-
     <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>

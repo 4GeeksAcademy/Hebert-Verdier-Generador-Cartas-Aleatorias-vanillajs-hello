@@ -5,6 +5,18 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+let buttonDimension = document.querySelector("#buttonDimensiones");
+buttonDimension.addEventListener("click", cambiarDimension);
+
+function cambiarDimension() {
+  let newHeight = document.querySelector("#height").value;
+  let newWidth = document.querySelector("#width").value;
+
+  let card = document.querySelector("#card");
+  card.style.height = "" + newHeight + "px";
+  card.style.width = "" + newWidth + "px";
+}
+
 let button = document.querySelector("#buttonGenerar");
 button.addEventListener("click", generatedNewCard);
 
